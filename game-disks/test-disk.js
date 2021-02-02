@@ -9,7 +9,7 @@ const testDisk = {
       desc: `Du står i hallen, framför dig ser du en lång korridor, bakom dig en låst dörr. Skriv SAKER för att se vad som mer finns i rummet.`, // Displayed when the player first enters the room.
       items: [
         {
-          name: "dörr",
+          name: ["dörr", "dörren"],
           desc: "Den leder till norr.", // Displayed when the player looks at the item.
           onUse: () => goDir("norr"), // Called when the player uses the item.
         },
@@ -18,7 +18,7 @@ const testDisk = {
           desc: `De växer över dörren så den går inte att öppna.`,
         },
         {
-          name: "yxa",
+          name: ["yxa",  "yxan"],
           desc: `Du kan förmodligen använda den för att ta bort klängväxterna som växer över dörren.`,
           isTakeable: true, // Allows the player to take the item.
           onUse: () => {

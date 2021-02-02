@@ -126,7 +126,7 @@ let look = () => {
 
 // look in the passed way
 // string -> nothing
-let lookThusly = (str) => println(`Du tittar åt ${str}.`);
+let lookThusly = (str) => println(`Du tittar ${str}.`);
 
 // look at the passed item or character
 // array -> nothing
